@@ -11535,16 +11535,16 @@ header.masthead .masthead-heading {
   opacity: 0.3;
 }
 
-.team-member {
+.profile-member {
   margin-bottom: 3rem;
   text-align: center;
 }
-.team-member img {
+.profile-member img {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
-.team-member h4, .team-member .h4 {
+.profile-member h4, .profile-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
@@ -11612,3 +11612,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
