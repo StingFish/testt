@@ -88,7 +88,7 @@
                     <h3 class="section-subheading text-muted">This is our popular one</h3>
                 </div>
                 <div class="row text-center">
-                                    <video width="60%" height="30%" controls autoplay id="vidd" poster="assets/img/logos/poster.jpg">
+                                    <video width="60%" height="30%" controls id="vidd" poster="assets/img/logos/poster.jpg">
                                     <source src="assets/vid/thinktanq1.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                     </video><br><br>
@@ -291,6 +291,10 @@
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                    <div class="col-lg-8 mx-auto text-center">
+                    <img src="assets/img/team/cert.png" style="width: 100%;height: 50%;" /><br>
+                    <p class="large text-muted"><i>mElimu Certificate of Authorization</i></p>
+                </div><br>
                 </center>
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Our team is exclusively committed to optimizing transactions involving clients within the digital industry. We understand the challenges of our clients through strengthened links with industrial talents and advanced business and technology intelligence.</p></div>
@@ -312,30 +316,30 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" action="index.html" data-sb-form-api-token="API_TOKEN" method="post">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Full Name *" data-sb-validations="required" />
+                                <input class="form-control" id="name" name="fname" type="text" placeholder="Your Full Name *" required />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" name="meyl" type="email" placeholder="Your Email *"  required />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <input class="form-control" id="phone" name="tele" type="tel" placeholder="Your Phone *" onkeypress="return /[0-9]/i.test(event.key)"  required  />
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="mess" placeholder="Your Message *"  required ></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                         </div>
@@ -358,7 +362,7 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="#submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="#submitButton" name="gett" type="submit" onclick="document.getElementById('vidd').pause();">Send Message</button></div>
                 </form>
             </div>
         </section>
@@ -368,7 +372,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; ThinkTanQ Business Creation and Management OPC</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/thinktanqbcm"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/thinktanqbcm"><i class="fab fa-facebook-f"></i></a>/thinktanqbcm
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <p class="link-dark text-decoration-none me-3" style="display: inline-block;"><i class="fas fa-phone"></i>&nbsp;09687008818</p>
@@ -389,7 +393,7 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <p class="item-intro" style="font-weight: bolder; font-size: 40px;color: red;">Learning Management System</p>
-                                    <video width="100%" height="50%" controls autoplay id="vidd">
+                                    <video width="100%" height="50%" controls  id="vidd">
                                     <source src="assets/vid/thinktanq1.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                     </video><br><br>
